@@ -1,2 +1,8 @@
-<h1>sample post</h1>
-<app-post-create></app-post-create>
+<app-header></app-header>
+<main>
+    <app-post-create (postcreated) = "onpostadded($event)" ></app-post-create>
+    <app-post-list [posts] = "storedposts"></app-post-list>
+</main>
+
+
+
